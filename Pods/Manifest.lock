@@ -1,0 +1,204 @@
+PODS:
+  - ACEExpandableTextCell (1.0.4):
+    - SZTextView
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking-Synchronous (1.1.0):
+    - AFNetworking-Synchronous/3.x (= 1.1.0)
+  - AFNetworking-Synchronous/3.x (1.1.0):
+    - AFNetworking (~> 3.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMap2DMap (4.3.0):
+    - AMapFoundation (~> 1.2)
+  - AMapFoundation (1.4.2)
+  - AMapLocation (2.1.1):
+    - AMapFoundation (~> 1.2)
+  - AMapSearch (4.3.0):
+    - AMapFoundation (~> 1.2)
+  - AutoLinearLayoutView (0.3.0)
+  - AVOSCloud (3.2.12)
+  - BEMCheckBox (1.4.1)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - DACircularProgress (2.3.1)
+  - DGActivityIndicatorView (2.1.1)
+  - EMString (0.3.0)
+  - FDFullscreenPopGesture (1.1)
+  - FSCalendar (2.5.1)
+  - GTMBase64 (1.0.0)
+  - HappyDNS (0.3.12)
+  - HMSegmentedControl (1.5.3)
+  - IDMPhotoBrowser (1.11.3):
+    - DACircularProgress
+    - pop
+    - SDWebImage (= 4.0.0)
+  - IGLDropDownMenu (1.6.2)
+  - JMRoundedCorner (1.2.1)
+  - JSONModel (1.7.0)
+  - JVFloatingDrawer (0.1.0)
+  - LCActionSheet (3.3.1):
+    - Masonry (~> 1.1.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - MGSwipeTableCell (1.6.1)
+  - MJExtension (3.0.13)
+  - MXPagerView (0.1.3)
+  - MXParallaxHeader (0.5.2)
+  - MXSegmentedPager (3.1.0):
+    - MXPagerView (~> 0.1.3)
+    - MXParallaxHeader (~> 0.5.2)
+  - NetworkEye (1.0.6):
+    - NetworkEye/standard (= 1.0.6)
+  - NetworkEye/standard (1.0.6)
+  - pop (1.0.10)
+  - Qiniu (7.1.8):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - RealReachability (1.1.9):
+    - RealReachability/Connection (= 1.1.9)
+    - RealReachability/Ping (= 1.1.9)
+  - RealReachability/Connection (1.1.9)
+  - RealReachability/Ping (1.1.9)
+  - RTRootNavigationController (0.6.3):
+    - RTRootNavigationController/Core (= 0.6.3)
+  - RTRootNavigationController/Core (0.6.3)
+  - SDAutoLayout (2.2.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SZTextView (1.3.0)
+  - TOWebViewController (2.2.6):
+    - TOWebViewController/Core (= 2.2.6)
+  - TOWebViewController/Core (2.2.6)
+  - TPKeyboardAvoiding (1.3.1)
+  - TZImagePickerController (1.9.3)
+  - ZFDragableModalTransition (0.6)
+
+DEPENDENCIES:
+  - ACEExpandableTextCell (~> 1.0.4)
+  - AFNetworking-Synchronous
+  - AMap2DMap (~> 4.3.0)
+  - AMapLocation (~> 2.1.0)
+  - AMapSearch (~> 4.3.0)
+  - AutoLinearLayoutView
+  - AVOSCloud (~> 3.2.9)
+  - BEMCheckBox
+  - CocoaLumberjack
+  - DGActivityIndicatorView
+  - EMString
+  - FDFullscreenPopGesture
+  - FSCalendar (from `https://github.com/Seanwong933/FSCalendar.git`)
+  - GTMBase64
+  - HMSegmentedControl (from `https://github.com/Seanwong933/HMSegmentedControl`)
+  - IDMPhotoBrowser
+  - IGLDropDownMenu
+  - JMRoundedCorner
+  - JSONModel
+  - JVFloatingDrawer
+  - LCActionSheet
+  - MagicalRecord
+  - Masonry
+  - MBProgressHUD
+  - MGSwipeTableCell
+  - MJExtension
+  - MXPagerView (= 0.1.3)
+  - MXSegmentedPager (from `https://github.com/Seanwong933/MXSegmentedPager`)
+  - NetworkEye
+  - Qiniu
+  - RealReachability
+  - RTRootNavigationController
+  - SDAutoLayout
+  - SDWebImage
+  - TOWebViewController
+  - TPKeyboardAvoiding
+  - TZImagePickerController
+  - ZFDragableModalTransition
+
+EXTERNAL SOURCES:
+  FSCalendar:
+    :git: https://github.com/Seanwong933/FSCalendar.git
+  HMSegmentedControl:
+    :git: https://github.com/Seanwong933/HMSegmentedControl
+  MXSegmentedPager:
+    :git: https://github.com/Seanwong933/MXSegmentedPager
+
+CHECKOUT OPTIONS:
+  FSCalendar:
+    :commit: 927f6cce17456b8876feae07bec3f1fb0b57f440
+    :git: https://github.com/Seanwong933/FSCalendar.git
+  HMSegmentedControl:
+    :commit: 8450b7dcd627cca77cdeda56b1ec2d3625fe39f3
+    :git: https://github.com/Seanwong933/HMSegmentedControl
+  MXSegmentedPager:
+    :commit: 59d45a1dfa6666fbbdecb4dd22f868fd9b3fa243
+    :git: https://github.com/Seanwong933/MXSegmentedPager
+
+SPEC CHECKSUMS:
+  ACEExpandableTextCell: 02c1fdb5a57344f543c9536c8c985ffcca1ed8b2
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AFNetworking-Synchronous: 61b98fb931b114b0da2b243957ea533e2954c2a2
+  AMap2DMap: f3f0fc5cdbf0242ff22da0c8605f24f8d7187b35
+  AMapFoundation: 6c0471c9a6a0ad17dad46e3d800ad56ca170f82a
+  AMapLocation: dd203f76b034ef5cb546600f4e1ffad2a3a14072
+  AMapSearch: c90cc018a6c5281af17af6058ca99218a4d4b442
+  AutoLinearLayoutView: b4da48a230fcbe03c38e3fd01f435d830071c49b
+  AVOSCloud: fcbb5c2bcccaddbdea8c2b4f6c1ad7f13e6639fe
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  EMString: 612632d8224e86dd31e5743ec27ee28ea6faeae4
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FSCalendar: 8efeb4b92240937204165c7743f4375923112fb5
+  GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
+  HappyDNS: 691a3041128055d09866f86e6e9ca90f24da1f18
+  HMSegmentedControl: 8c87fc17a40501eb3d71f8cbcaf130235b5c7aa1
+  IDMPhotoBrowser: b96159fe4adb991a844068eb17dab9c0b7d7e51a
+  IGLDropDownMenu: ae118618ae858fa66ce7c2ac80ed9124a710b228
+  JMRoundedCorner: 214e56c2a7e3a0916e8d6040c66d85519cc1be87
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  JVFloatingDrawer: 4782b1df21411aef2c1818f3b346cace02cc2e24
+  LCActionSheet: c3b4c9029aef65b33e4d89ef371da95787a1fd3b
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MGSwipeTableCell: 19a1d65dcc1ceaea42eb44bb2adae32101904514
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MXPagerView: db0c020aeada6a0c704f18f8053468560e346982
+  MXParallaxHeader: 5070ba8e8af27ec793c0d32ae82cfd2318e59635
+  MXSegmentedPager: 2b7d6f8d6b7751c4dcb928d30bc4ef66214da34c
+  NetworkEye: 54afcde161ab50e407445b86abd7350f3cd08533
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  Qiniu: 2f1b9d13904b6a7608a66a2d02c5b7b24575622a
+  RealReachability: a8c483900986a0f3305733961effbfbb00637a02
+  RTRootNavigationController: 09e3a113feecf21c194a83ad6755f5f319723c54
+  SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
+  TOWebViewController: a29908019f7e0e0f8eccfab8a1ee8dcdf4fc5aac
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
+  ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
+
+PODFILE CHECKSUM: e3ae91218fbfe9e24d7ea3945994d3ffb99e420e
+
+COCOAPODS: 1.3.1

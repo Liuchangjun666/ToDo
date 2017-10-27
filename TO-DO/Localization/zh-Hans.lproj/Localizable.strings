@@ -1,0 +1,148 @@
+/* Common */
+"OK" = "确认";
+"Yes" = "确认";
+"Sign Up" = "注册";
+"Sign In" = "登录";
+"Name" = "名称";
+"Username" = "用户名";
+"Password" = "密码";
+"Email" = "邮箱";
+"Username(Email)" = "用户名(邮箱)";
+"FORGOT PASSWORD?" = "忘记密码?";
+"TERMS & CONDITIONS" = "条款和条件";
+"Description" = "描述";
+"Time" = "时间";
+"Location" = "位置";
+"Account" = "账户";
+"Close" = "关闭";
+
+/* Button */
+"SIGN IN" = "登录";
+"DONE" = "完成";
+
+/* Alert */
+"Error" = "错误";
+
+/* Validate */
+" is too long, maximum is " = "太长，最大字符数（中文占两个字符）为";
+" is too short, minimum is " = "太短，最小字符数（中文占两个字符）为";
+" is invalid" = "无效";
+" is incorrect" = "不正确";
+" can not be empty" = "不能为空";
+"Please select your avatar" = "请在“+”处选择头像";
+"User doesn't exist" = "用户不存在";
+"Email has already been taken" = "邮箱已被占用";
+"Failed login count over limit, reset your password or try again later(15 mins)" = "登录失败次数超过限制，请稍候再试（15分钟后），或者通过忘记密码重设密码。";
+"Failed to save photo, please check your storage on device and try again" = "保存图片失败，请检查你的存储空间并重试";
+
+/* Pilot data */
+"Click task" = "点击任务";
+"See the details or edit it." = "查看详情或编辑。";
+"Swipe task" = "滑动任务";
+"Swipe left to complete, swipe right to snooze/delete." = "左滑完成任务，右滑修改时间/删除任务";
+
+/* Photo */
+"Choose operation" = "选择操作";
+"View original" = "查看大图";
+"Pick from album" = "从相册选择";
+"Cancel" = "取消";
+
+/* Errors */
+"Please allow app to access your device's camera in \"Settings\" -> \"Privacy\" -> \"Camera\"" = "请在iPhone的“设置-隐私-相机”选项中，允许本应用访问你的相机";
+"Failed to upload avatar, please try again" = "上传图片失败，请重试";
+"Unable to sync, please check your network connection!" = "无法同步，请检查你的网络是否通畅！";
+"Please check your network connection" = "请检查你的网络是否通畅！";
+"Account information has changed, please log in again" = "账户信息已变更，请重新登录";
+
+/* Exceptions */
+"Unable to open your camera or album because of an unexpected error" = "因为未知原因，无法使用您的相机或相册";
+
+/* Task empty */
+"Your task list is empty..." = "您当前没有任务...";
+
+/* Home */
+"Home" = "首页";
+"Tasks" = "个任务";
+
+/* Calendar */
+"Calendar" = "日历";
+
+/* Create */
+"Create New" = "添加";
+"Title" = "标题";
+
+/* Map */
+"Choose location" = "选择位置";
+
+/* HSDatePickerViewController */
+"Today" = "今天";
+"Set date" = "设置时间";
+"Back" = "返回";
+
+/* Sync */
+"Unable to sync, please check your network connection!" = "同步失败，请检查您的网络连接!";
+"Sync error: failed to download data" = "同步错误：下载数据失败";
+"Sync error: failed to upload photos, please retry" = "同步错误：上传照片失败，请重试";
+"Sync error: failed to upload/save tasks, please retry" = "同步错误：上传/保存任务失败，请重试";
+"Sync error: failed to fetch sync record from server, please retry" = "同步错误：获取服务器同步记录失败，请重试";
+"Sync error: failed to fetch tasks from server, please retry" = "同步错误：获取服务器上的待办事项失败，请重试";
+"Sync error: failed to insert record on server, please retry" = "同步错误：向服务器插入同步记录失败，请重试";
+"Sync error: failed to fetch timestamp from server, please retry" = "同步错误：向服务器请求时间戳失败，请重试";
+"Sync error: failed to save tasks on server, please retry" = "同步错误：向服务器保存待办事项失败，请重试";
+"Sync error: server may be unavailable, please try again later" = "同步错误：服务器可能异常，请稍后重试";
+
+/* Detail */
+"Add location" = "添加位置";
+"Add a photo" = "添加照片";
+"Input description" = "输入描述";
+"Saving failed, please try again" = "保存失败，请重试";
+
+/* Map */
+"Locate failed" = "定位失败";
+
+/* Search */
+"Search title/description/location" = "搜索标题、描述或地址";
+
+/* Profile */
+"Profile" = "资料";
+"COMPLETE" = "完成";
+"SNOOZED" = "延期";
+"OVERDUE" = "过期";
+
+/* Setting */
+"Setting" = "设置";
+"ACCOUNT" = "账户";
+"SYNC" = "同步";
+"REMINDER" = "提醒";
+"EXTRAS" = "其他";
+"SYNCING" = "同步中...";
+"LOGOUT" = "注销";
+
+"No record" = "没有记录";
+"Change Password" = "修改密码";
+"Forgot Password?" = "忘记密码？";
+"We'll send you an email with a link to reset your password." = "我们会向你发送重置密码的邮件，请点击邮件的链接进行重置。";
+"Please enter your registration email, we'll send you a link to reset your password." = "请输入你的注册邮箱，我们会向你发送一个重置密码的链接。";
+"Sign Out" = "注销";
+"Feedback" = "反馈";
+"Enable auto sync" = "启用自动同步";
+"Last sync time" = "上次同步时间";
+"Enable auto reminder" = "启用自动提醒";
+"About" = "关于";
+"Clear Cache" = "清除缓存";
+"TO-DO feedback" = "TO-DO 反馈";
+"Running environment" = "运行环境";
+"Thank you" = "感谢";
+"Greatly appreciate your feedback, we will use it to evaluate changes and make improvements in this app." = "非常感谢您的反馈，我们将评估它并改进这个应用程序。";
+"The cache may contain photos you aren't synchronized" = "缓存中可能包含你尚未同步的照片，确认清除吗？";
+"Are you sure?" = "确定？";
+
+/* About */
+"LEGAL" = "法律";
+"Privacy Policy" = "隐私政策";
+"Licenses" = "授权";
+"Acknowledgements" = "致谢";
+"Version" = "版本";
+"Developer email: siegrainwong@gmail.com" = "有任何建议欢迎反馈到 siegrain@qq.com";
+"VERY APPRECIATE FOR THESE PROJECTS" = "非常感谢以下开源项目";
+"SOURCE OF UI DESIGN" = "UI设计来源";
