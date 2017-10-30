@@ -14,10 +14,12 @@
 //TODO: 图钉的图标需要修改
 
 @interface SGBaseMapViewController ()
+
 @property(nonatomic, strong) MAMapView *mapView;
 @property(nonatomic, strong) MAPointAnnotation *annotation;
 @property(nonatomic, strong) AMapSearchAPI *searchAPI;
 @property(nonatomic, strong) SGLocating *locating;
+
 @end
 
 @implementation SGBaseMapViewController
@@ -50,7 +52,7 @@
     [super viewDidAppear:animated];
     
     [self.mapView setZoomLevel:12 animated:NO];
-    [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(30.663468, 104.072218) animated:YES];
+    [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(22.867634, 113.752098) animated:YES];
     
     if (self.coordinate) {
         [self pinAnnotationAtCoordinate:self.coordinate];
@@ -156,4 +158,5 @@
     [SGHelper alertWithMessage:@"查询坐标信息失败！"];
     self.annotation.title = @"查询失败";
 }
+
 @end

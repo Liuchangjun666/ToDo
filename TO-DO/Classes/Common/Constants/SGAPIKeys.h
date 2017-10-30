@@ -20,10 +20,10 @@
 static NSString * const kAmapKey = @"2c1c7fefd22f3274a9a209f651797d5e";
 
 /* 七牛 */
-static NSString *const kQiniuDomain = @"oy974nxk2.bkt.clouddn.com/";
-static NSString *const kQiniuBucketName = @"todo";
-static NSString *const kQiniuSK = @"AYj7Wcat_fR2Pkb6sAnYEqeYQxwlGxcJ8HNbikAI";
-static NSString *const kQiniuAK = @"EZlVtu3nfiGIpHyE5w3PSvbSLkUlrZQ_mhMcEnQ4";
+static NSString *const kQiniuDomain = @"oyiw6pnl7.bkt.clouddn.com/";
+static NSString *const kQiniuBucketName = @"todo-head-image";
+static NSString *const kQiniuAK = @"AYj7Wcat_fR2Pkb6sAnYEqeYQxwlGxcJ8HNbikAI";
+static NSString *const kQiniuSK = @"EZlVtu3nfiGIpHyE5w3PSvbSLkUlrZQ_mhMcEnQ4";
 
 /* LeanCloud */
 static NSString *const kLeanCloudAppID   = @"UdxeYwXEhhgkwG2tDiNRIxxv-gzGzoHsz";

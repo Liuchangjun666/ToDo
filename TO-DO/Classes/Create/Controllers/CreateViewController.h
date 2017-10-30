@@ -24,4 +24,5 @@
  * @param selectedDate
  */
 - (void)setSelectedDate:(NSDate *)selectedDate;
+
 @end

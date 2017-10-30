@@ -23,6 +23,7 @@
 // TODO: 多人协作（这个坑我都不信我有心情填掉...）
 
 @interface CreateViewController () <UITextFieldDelegate, TZImagePickerControllerDelegate>
+
 @property(nonatomic, strong) MRTodoDataManager *dataManager;
 @property(nonatomic, strong) UIView *containerView;
 @property(nonatomic, strong) SGTextField *titleTextField;

@@ -85,7 +85,7 @@ LoginView ()
 }
 
 - (void)debug {
-    _usernameTextField.field.text = @"siegrain@gmail.com";
+    _usernameTextField.field.text = @"1114845925@qq.com";
 }
 
 - (void)setup {

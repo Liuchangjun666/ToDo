@@ -14,14 +14,15 @@
 
 static CGFloat const kCalendarOffset = 20;
 
-@interface
-CalendarViewController ()
+@interface CalendarViewController ()
+
 @property(nonatomic, strong) UIView *calendarContainer;
 @property(nonatomic, strong) FSCalendar *calendar;
 @property(nonatomic, strong) TodoTableViewController *todoTableViewController;
 
 @property(nonatomic, strong) MRTodoDataManager *dataManager;
 @property(nonatomic, assign) BOOL isCalendarCollapsed;
+
 @end
 
 @implementation CalendarViewController

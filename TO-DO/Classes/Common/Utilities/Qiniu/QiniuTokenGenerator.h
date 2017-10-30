@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface QiniuTokenGenerator : NSObject
+
 + (NSString*)generateToken;
+
 @end

@@ -10,7 +10,9 @@ static CGFloat const kSpacingRatioToWidth = 0.05f;
 static CGFloat const kIconSize = 18;
 
 @interface SettingTableViewCell : UITableViewCell
+
 - (void)setModel:(SettingModel *)model;
 
 @property (nonatomic, copy) void (^switchDidChange)(BOOL value);
+
 @end

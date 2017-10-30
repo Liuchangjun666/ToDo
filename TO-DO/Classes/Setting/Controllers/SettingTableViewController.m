@@ -47,6 +47,7 @@ typedef NS_ENUM(NSInteger, SGSettingApplication) {
 };
 
 @interface SettingTableViewController () <MFMailComposeViewControllerDelegate>
+
 @property(nonatomic, strong) CDUser *user;
 
 @property(nonatomic, strong) NSArray *titleArray;
@@ -54,6 +55,7 @@ typedef NS_ENUM(NSInteger, SGSettingApplication) {
 
 @property(nonatomic, strong) LCUserDataManager *dataManager;
 @property(nonatomic, strong) SGTextEditorViewController *editorViewController;
+
 @end
 
 @implementation SettingTableViewController

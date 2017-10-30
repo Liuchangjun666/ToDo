@@ -16,11 +16,14 @@
 #import "CommonDataManager.h"
 
 @interface SGBaseViewController () <TZImagePickerControllerDelegate>
+
 @end
 
 @implementation SGBaseViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _lcUser = [AppDelegate globalDelegate].lcUser;
     _cdUser = [AppDelegate globalDelegate].cdUser;
     
@@ -37,7 +40,8 @@
 }
 
 - (void)setupNavigation {
-    if (!_isNativeNavigationItems) [self setupCustomNavigationBar]; else [self setupNavigationBar];
+    if (!_isNativeNavigationItems) [self setupCustomNavigationBar];
+    else [self setupNavigationBar];
 }
 
 - (void)setupCustomNavigationBar {
@@ -45,18 +49,18 @@
     
     _leftNavigationButton = [[UIButton alloc] init];
     _leftNavigationButton.tintColor = [UIColor whiteColor];
-    _leftNavigationButton.frame = CGRectMake(0, 0, 20, 17);
+    _leftNavigationButton.frame = CGRectMake(0, 0, 42, 34);
     _leftNavigationButton.titleLabel.font = [SGHelper themeFontNavBar];
     [_leftNavigationButton addTarget:self action:@selector(toggleDrawer) forControlEvents:UIControlEventTouchUpInside];
     [_leftNavigationButton setImage:[UIImage imageNamed:@"nav_menu"] forState:UIControlStateNormal];
     
     UIView *placeholderView = [[UIView alloc] init];
-    placeholderView.frame = CGRectMake(0, 0, 5, 1);
+    placeholderView.frame   = CGRectMake(0, 0, 5, 1);
     
     _titleLabel = [[UILabel alloc] init];
     _titleLabel.textColor = [UIColor whiteColor];
     _titleLabel.frame = CGRectMake(0, 0, kScreenWidth - 55 * 2 - 5, 20);
-    _titleLabel.font = [SGHelper themeFontNavBar];
+    _titleLabel.font  = [SGHelper themeFontNavBar];
     
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_leftNavigationButton];
     UIBarButtonItem *placeHolderBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:placeholderView];
@@ -65,7 +69,7 @@
     
     _rightNavigationButton = [UIButton new];
     _rightNavigationButton.tintColor = [UIColor whiteColor];
-    _rightNavigationButton.frame = CGRectMake(0, 0, 20, 20);
+    _rightNavigationButton.frame = CGRectMake(0, 0, 40, 40);
     _rightNavigationButton.titleLabel.font = [SGHelper themeFontNavBar];
     [_rightNavigationButton setImage:[UIImage imageNamed:@"nav_search"] forState:UIControlStateNormal];
     [_rightNavigationButton addTarget:self action:@selector(rightNavButtonDidPress) forControlEvents:UIControlEventTouchUpInside];

@@ -11,9 +11,10 @@
 #import "NSString+EMAdditions.h"
 
 @protocol SGViews <NSObject>
-- (void)setupViews;
 
+- (void)setupViews;
 - (void)bindConstraints;
+
 @end
 
 @protocol SGTableViews <SGViews>
@@ -38,4 +39,5 @@
 
 /*当清空缓存后，MagicalRecord的瞬态字段还在内存中，要在这个方法中把模型中的图片字段给清空*/
 - (void)shouldResetModelStateAtIndexPath:(NSIndexPath *)indexPath;
+
 @end

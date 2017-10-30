@@ -10,6 +10,7 @@
 #import "QiniuTokenGenerator.h"
 
 @implementation QiniuTokenGenerator
+
 + (NSString *)generateToken {
     NSInteger deadline = (NSInteger) [[[NSDate date] dateByAddingTimeInterval:60 * 60] timeIntervalSince1970];
     NSString *uploadPolicy = [NSString stringWithFormat:@"{\"scope\":\"%@\",\"deadline\":%ld}", kQiniuBucketName, (long) deadline];

@@ -9,13 +9,15 @@
 
 
 @interface SettingViewController () <TodoTableViewControllerDelegate, SGBaseTableViewControllerDelegate>
+
 @property(nonatomic, strong) SettingTableViewController *tableViewController;
+
 @end
 
 @implementation SettingViewController
 
 - (void)dealloc {
-    //Mark: 由于释放顺序的原因，导致TableView释放后KVO还没有移除，只有先移除HeaderView
+    // MARK: 由于释放顺序的原因，导致TableView释放后KVO还没有移除，只有先移除HeaderView
     [_tableViewController.tableView.tableHeaderView removeFromSuperview];
     self.headerView = nil;
     DDLogWarn(@"%s", __func__);

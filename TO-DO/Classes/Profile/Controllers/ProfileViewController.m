@@ -10,11 +10,13 @@ static CGFloat const kSegmentedControlHeight = 90;
 static CGFloat const kParallaxHeaderMinimumHeight = 64;
 
 @interface ProfileViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, TodoTableViewControllerDelegate>
+
 @property(nonatomic, strong) TodoTableViewController *completedTableViewController;
 @property(nonatomic, strong) TodoTableViewController *snoozedTableViewController;
 @property(nonatomic, strong) TodoTableViewController *overdueTableViewController;
 
 @property(nonatomic, assign) BOOL titleIsShowing;
+
 @end
 
 @implementation ProfileViewController
@@ -92,7 +94,7 @@ static CGFloat const kParallaxHeaderMinimumHeight = 64;
 - (void)segmentedPager:(MXSegmentedPager *)segmentedPager didScrollWithParallaxHeader:(MXParallaxHeader *)parallaxHeader {
     //这里的progress估计是没有将minimumHeight纳入计算，这里要根据比例来得到近似值...还要纠正误差...
     CGFloat ratio = self.headerHeight / (kParallaxHeaderMinimumHeight + self.headerHeight);
-    CGFloat alpha = fabsf(parallaxHeader.progress > 0 ? 0 : parallaxHeader.progress) / ratio;
+    CGFloat alpha = fabs(parallaxHeader.progress > 0 ? 0 : parallaxHeader.progress) / ratio;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:ColorWithRGBA(0xFF3366, alpha)] forBarMetrics:UIBarMetricsDefault];
     
@@ -123,15 +125,15 @@ static CGFloat const kParallaxHeaderMinimumHeight = 64;
     NSInteger count = 0;
     UIColor *color = nil;
     if (index == 0) {
-        text = @"COMPLETE";
+        text = @"已完成";//@"COMPLETE";
         count = _completedTableViewController.dataCount;
         color = [SGHelper themeColorCyan];
     } else if (index == 1) {
-        text = @"SNOOZED";
+        text = @"待处理";//@"SNOOZED";
         count = _snoozedTableViewController.dataCount;
         color = [SGHelper themeColorYellow];
     } else if (index == 2) {
-        text = @"OVERDUE";
+        text = @"已过期";//@"OVERDUE";
         count = _overdueTableViewController.dataCount;
         color = [SGHelper themeColorPurple];
     }
@@ -174,4 +176,5 @@ static CGFloat const kParallaxHeaderMinimumHeight = 64;
     [label sizeToFit];
     return label.frame.size;
 }
+
 @end

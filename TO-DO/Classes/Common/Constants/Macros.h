@@ -69,7 +69,7 @@
 
 //根据图片相对路径获取完整的NSURL
 #define GetPictureUrl(urlStr, style) ([NSURL URLWithString:[NSString stringWithFormat:@"%@%@-%@", kQiniuDomain, urlStr, style]])
-#define GetQiniuPictureUrl(urlStr) ([NSURL URLWithString:[NSString stringWithFormat:@"%@%@", kQiniuDomain, urlStr]])
+#define GetQiniuPictureUrl(urlStr) ([NSURL URLWithString:[NSString stringWithFormat:@"http://%@%@", kQiniuDomain, urlStr]])
 
 //控制状态栏网络菊花
 #define ApplicationNetworkIndicatorVisible(isVisible) ([[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:isVisible])

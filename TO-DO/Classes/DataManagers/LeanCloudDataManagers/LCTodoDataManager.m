@@ -19,9 +19,10 @@
 /* localization dictionary keys */
 static NSString* const kPictureUploadFailedKey = @"PictureUploadFailed";
 
-@interface
-LCTodoDataManager ()
+@interface LCTodoDataManager ()
+
 @property (nonatomic, readwrite, strong) LCTodo* model;
+
 @end
 
 @implementation LCTodoDataManager

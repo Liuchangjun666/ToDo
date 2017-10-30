@@ -9,6 +9,7 @@
 #import "UIImage+Extension.h"
 
 @implementation UIImage (Extension)
+
 + (instancetype)imageAtResourcePath:(NSString *)imageName {
     NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
     UIImage *image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, imageName]];
