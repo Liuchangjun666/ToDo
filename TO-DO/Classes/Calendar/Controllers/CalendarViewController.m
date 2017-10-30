@@ -12,7 +12,7 @@
 #import "MRTodoDataManager.h"
 #import "UIImage+Extension.h"
 
-static CGFloat const kCalendarOffset = 20;
+static CGFloat const kCalendarOffset = 84;
 
 @interface CalendarViewController ()
 
@@ -38,7 +38,7 @@ static CGFloat const kCalendarOffset = 20;
 #pragma mark - accessors
 
 - (CGFloat)headerHeight {
-    return kScreenWidth * 1.1f;
+    return kScreenWidth * 0.9f;
 }
 
 - (CGFloat)headerCollapseHeight {
@@ -135,8 +135,8 @@ static CGFloat const kCalendarOffset = 20;
     }];
     
     [_calendarContainer mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.offset(5);
-        make.right.offset(-5);
+        make.left.offset(12);
+        make.right.offset(-12);
         make.top.offset(kCalendarOffset);
         make.height.offset(self.calendarHeight);
     }];
