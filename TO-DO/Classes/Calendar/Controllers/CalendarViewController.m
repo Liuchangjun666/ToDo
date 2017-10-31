@@ -38,7 +38,7 @@ static CGFloat const kCalendarOffset = 84;
 #pragma mark - accessors
 
 - (CGFloat)headerHeight {
-    return kScreenWidth * 0.9f;
+    return kScreenWidth * 1.18f;
 }
 
 - (CGFloat)headerCollapseHeight {
@@ -46,7 +46,7 @@ static CGFloat const kCalendarOffset = 84;
 }
 
 - (CGFloat)calendarHeight {
-    return self.headerHeight - 64;
+    return self.headerHeight - 158;
 }
 
 - (CGFloat)calendarCollapseHeight {
@@ -171,9 +171,9 @@ static CGFloat const kCalendarOffset = 84;
 #pragma mark - todo tableView controller delegate
 
 - (void)tableViewDidScrollToY:(CGFloat)y {
-    CGFloat offset = y + 64;
-    [self setNavItemAlphaWithOffsetY:offset];
-    [self setCalendarWithOffsetY:offset];
+//    CGFloat offset = 0;//y + 64;
+//    [self setNavItemAlphaWithOffsetY:offset];
+//    [self setCalendarWithOffsetY:offset];
 }
 
 - (void)todoTableViewControllerDidReloadData {

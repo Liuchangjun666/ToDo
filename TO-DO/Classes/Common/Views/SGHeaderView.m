@@ -13,7 +13,7 @@
 
 static CGFloat const kAvatarButtonSizeMultipliedByHeight = 0.16;
 static CGFloat const kTitleLabelHeight = 40;
-static CGFloat const kRectangleHeight = 40;
+static CGFloat const kRectangleHeight = 60;
 static CGFloat const kTitleSpacingX = 25;
 static void *const kHeaderViewKVOContext = (void *) &kHeaderViewKVOContext;
 

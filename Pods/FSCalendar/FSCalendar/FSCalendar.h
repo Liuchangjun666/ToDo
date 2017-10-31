@@ -97,7 +97,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Asks the dataSource the number of event dots for a specific date.
  *
- * @see
+ *
  *
  *   - (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance eventColorForDate:(NSDate *)date;
  *   - (NSArray *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance eventColorsForDate:(NSDate *)date;

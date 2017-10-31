@@ -68,9 +68,14 @@ DrawerTableViewController ()
     ];
     
     [_leftBottomButton setTitle:NSLocalizedString(@"SYNC", nil) forState:UIControlStateNormal];
+    _leftBottomButton.titleLabel.font = [UIFont systemFontOfSize:16];
+    [_leftBottomButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_leftBottomButton setTitle:NSLocalizedString(@"SYNCING", nil) forState:UIControlStateDisabled];
+    [_leftBottomButton setTitleColor:[UIColor whiteColor] forState:UIControlStateDisabled];
     [_centerBottomButton setTitle:NSLocalizedString(@"SETTINGS", nil) forState:UIControlStateNormal];
     [_rightBottomButton setTitle:NSLocalizedString(@"LOGOUT", nil) forState:UIControlStateNormal];
+    _rightBottomButton.titleLabel.font = [UIFont systemFontOfSize:16];
+    [_rightBottomButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 #pragma mark - accessors
