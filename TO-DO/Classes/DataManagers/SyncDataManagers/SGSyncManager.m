@@ -102,9 +102,9 @@ static NSInteger const kMaximumSyncCountPerFetch = 100;
     [asyncOperation addExecutionBlock:^{
         //1. 准备同步
         if (![weakSelf isPrepared]) return [weakSelf.errorHandler returnWithError:nil description:nil failBlock:complete];
-        
+
         __block NSMutableArray<CDTodo *> *todosReadyToCommit = [NSMutableArray new];
-        
+
         //2. 开始同步
         NSBlockOperation *operation = [NSBlockOperation new];
         __weak NSBlockOperation *weakOperation = operation;
@@ -129,7 +129,7 @@ static NSInteger const kMaximumSyncCountPerFetch = 100;
                 [todosReadyToCommit addObjectsFromArray:[weakSelf fullSyncedTodosWithLastCreatedAt:lastCreatedAt ?: [NSDate date]]];
             }];
         }
-        
+
         //2-3. 汇总线程：上传并保存
         [operation setCompletionBlock:^{
             DDLogInfo(@"进入汇总线程");
@@ -164,8 +164,9 @@ static NSInteger const kMaximumSyncCountPerFetch = 100;
         
         return YES;
     }
-    
-    ApplicationNetworkIndicatorVisible(YES);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        ApplicationNetworkIndicatorVisible(YES);
+    });
     
     _lcUser = [AppDelegate globalDelegate].lcUser;
     _cdUser = [AppDelegate globalDelegate].cdUser;
@@ -557,7 +558,9 @@ static NSInteger const kMaximumSyncCountPerFetch = 100;
     _cdUser = nil;
     _lcUser = nil;
     
-    ApplicationNetworkIndicatorVisible(NO);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        ApplicationNetworkIndicatorVisible(NO);
+    });
 }
 
 /**

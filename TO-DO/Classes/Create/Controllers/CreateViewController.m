@@ -186,7 +186,7 @@
         
         [weakSelf.view endEditing:YES];
         [weakSelf enableView:NO];
-        
+
         CDTodo *todo = [CDTodo newEntityWithInitialData];
         todo.title = weakSelf.titleTextField.field.text;
         todo.sgDescription = weakSelf.descriptionTextField.field.text;
@@ -204,10 +204,10 @@
             todo.photoData = imageData;
             todo.photoImage = [UIImage imageWithData:imageData];
         }
-        
+
         [weakSelf enableView:YES];
         if (![weakSelf.dataManager InsertTask:todo]) return;
-        
+
         [[NSNotificationCenter defaultCenter] postNotificationName:kTaskChangedNotification object:weakSelf];
         if (weakSelf.createViewControllerDidFinishCreate) weakSelf.createViewControllerDidFinishCreate(todo);
         [weakSelf.navigationController popToRootViewControllerAnimated:YES];

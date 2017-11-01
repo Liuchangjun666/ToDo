@@ -27,7 +27,7 @@
     [self.manager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
         if (error) { //AMapLocationErrorDomain" - code: 2
             //NSLog(@"%@", error);
-            DDLogInfo(@"模拟器可能无法定位：%@",error);
+            DDLogInfo(@"无法定位：%@",error);
             return succeed(NO, nil, nil);
         }
         

@@ -25,7 +25,7 @@
 
 - (void)sync:(dispatch_block_t)block
 {
-    //dispatch_sync(self.queue, block);
+    dispatch_sync(self.queue, block);
 }
 
 #pragma mark -

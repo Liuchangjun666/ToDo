@@ -1373,7 +1373,7 @@
 				TargetAttributes = {
 					F9A7236D1CDDF8A800E3BC8E = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 885A4JY8FM;
+						DevelopmentTeam = VE3E697VHA;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -1792,7 +1792,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "TO-DO/TO-DO.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 885A4JY8FM;
+				DEVELOPMENT_TEAM = VE3E697VHA;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1817,7 +1818,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "TO-DO/TO-DO.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 885A4JY8FM;
+				DEVELOPMENT_TEAM = VE3E697VHA;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

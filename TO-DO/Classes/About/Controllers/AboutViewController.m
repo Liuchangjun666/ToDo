@@ -69,7 +69,7 @@
     [_headerView addSubview:_titleLabel];
     
     _contentLabel = [UILabel new];
-    _contentLabel.text = Localized(@"Developer email: siegrainwong@gmail.com");
+    _contentLabel.text = Localized(@"Developer email: 1114845925@qq.com");
     _contentLabel.font = [SGHelper themeFontDefault];
     _contentLabel.textAlignment = NSTextAlignmentCenter;
     [_headerView addSubview:_contentLabel];

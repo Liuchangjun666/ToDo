@@ -113,7 +113,10 @@
 #pragma mark - convenience
 
 + (NSString *)photoPath {
-    return [[[AppDelegate globalDelegate] sandboxUrl] stringByAppendingPathComponent:[NSString stringWithFormat:@"savedImages"]];
+    //return [[[AppDelegate globalDelegate] sandboxUrl] stringByAppendingPathComponent:[NSString stringWithFormat:@"savedImages"]];
+    NSArray *array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path =  array[0];
+    return [path stringByAppendingPathComponent:[NSString stringWithFormat:@"savedImages"]];
 }
 
 

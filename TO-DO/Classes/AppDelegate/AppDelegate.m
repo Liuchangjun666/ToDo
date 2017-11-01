@@ -28,6 +28,7 @@ static BOOL const kEnableViewControllerStateHolder = YES;
 @interface AppDelegate () <UNUserNotificationCenterDelegate>
 /* 视图状态存储 */
 @property(nonatomic, strong) NSMutableDictionary *stateHolder;
+
 @end
 
 @implementation AppDelegate
@@ -195,7 +196,9 @@ static BOOL const kEnableViewControllerStateHolder = YES;
         [center setDelegate:self];
         //iOS10 使用以下方法注册，才能得到授权
         [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionBadge + UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError *_Nullable error) {
-            [[UIApplication sharedApplication] registerForRemoteNotifications];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            });
             //TODO:授权状态改变
             NSLog(@"%@", granted ? @"授权成功" : @"授权失败");
         }];
@@ -265,15 +268,21 @@ static BOOL const kEnableViewControllerStateHolder = YES;
     if (!isForcing) if (syncType == SyncModeAutomatically && (!_cdUser.enableAutoSync || !_cdUser.enableAutoSync.boolValue)) return;
     
     __weak typeof(self) weakSelf = self;
+
     [[GCDQueue globalQueueWithLevel:DISPATCH_QUEUE_PRIORITY_DEFAULT] sync:^{
+    //[[GCDQueue globalQueueWithLevel:DISPATCH_QUEUE_PRIORITY_DEFAULT] async:^{
+
         if ([SGSyncManager isSyncing]) return;
         if (![weakSelf.window.rootViewController isKindOfClass:[JVFloatingDrawerViewController class]]) return;
-        DrawerTableViewController *drawer = (DrawerTableViewController *) _drawerViewController.leftViewController;
-        
-        drawer.isSyncing = YES;
-        [[SGSyncManager sharedInstance] synchronize:syncType complete:^(BOOL succeed) {
-            drawer.isSyncing = NO;
-        }];
+        dispatch_queue_t quene = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(quene, ^{
+            DrawerTableViewController *drawer = (DrawerTableViewController *) _drawerViewController.leftViewController;
+            
+            drawer.isSyncing = YES;
+            [[SGSyncManager sharedInstance] synchronize:syncType complete:^(BOOL succeed) {
+                drawer.isSyncing = NO;
+            }];
+        });
     }];
 }
 

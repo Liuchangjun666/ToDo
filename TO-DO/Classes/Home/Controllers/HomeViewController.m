@@ -40,7 +40,7 @@
 #pragma mark - accessors
 
 - (CGFloat)headerHeight {
-    return kScreenWidth * 0.9f;
+    return kScreenWidth * 0.8f;
 }
 
 #pragma mark - initial
