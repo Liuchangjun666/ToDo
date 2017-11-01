@@ -107,7 +107,7 @@ static CGFloat const kIndicatorSize = 13;
     _contentLabel.sd_layout
             .leftSpaceToView(_titleLabel, space.x)
             .centerYEqualToView(_titleLabel)
-            .rightSpaceToView(self.contentView, space.x)
+            .rightSpaceToView(self.contentView, space.x+15)
             .heightRatioToView(_iconView, 1);
     
     if (_style == SettingCellStyleSwitch) {
